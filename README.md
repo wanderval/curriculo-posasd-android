@@ -1,2 +1,2 @@
 # curriculo-posasd-android
-Aplicativo android para inclusão de informações do meu curriculum, utilizando SQLite e recursos shared
+Aplicativo android realizado em curso "Arquitetura e Desenvolvimento de Aplicativos Móveis", para inclusão de informações do meu curriculum, utilizando SQLite e recursos shared da plataforma android
