@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PUC_Curriculo_Sqlite</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_academic">AcademicActivity</string>
+    <string name="title_activity_professional">ProfessionalActivity</string>
+
+    <string name="titulo_prompt">Selecione um titulo</string>
+    <string-array name="titulos_array">
+        <item>Graduação</item>
+        <item>Pós-Graduação</item>
+        <item>Mestrado</item>
+        <item>Doutorado</item>
+    </string-array>
+
+</resources>

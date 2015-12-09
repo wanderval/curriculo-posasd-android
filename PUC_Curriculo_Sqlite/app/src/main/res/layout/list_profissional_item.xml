@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="8px">
+    <TextView
+        android:id="@+id/profissional_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="@dimen/text_font_h1"
+        android:text="Empresa"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <TextView
+        android:id="@+id/profissional_cargo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/profissional_nome"
+        android:layout_below="@+id/profissional_nome"
+        android:textSize="@dimen/text_font_h1"
+        android:text="Cargo"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <!-- counter -->
+    <TextView
+        android:id="@+id/profissional_dataentrada"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignLeft="@+id/profissional_cargo"
+        android:layout_below="@+id/profissional_cargo"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        android:text="dati"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/profissional_character"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_alignTop="@+id/profissional_dataentrada"
+        android:layout_toRightOf="@+id/profissional_dataentrada"
+        android:layout_toEndOf="@+id/profissional_dataentrada"
+        android:textColor="@color/colorPrimary"
+        android:text=" - "
+         />
+    <TextView
+        android:id="@+id/profissional_datasaida"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:text="dati"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/profissional_dataentrada"
+        android:layout_toRightOf="@+id/profissional_dataentrada"
+        android:layout_toEndOf="@+id/profissional_character" />
+</RelativeLayout>

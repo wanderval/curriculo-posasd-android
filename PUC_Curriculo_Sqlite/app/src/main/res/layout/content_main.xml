@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    >
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar"
+        android:textColor="#ffffff"
+        ></include>
+    <include
+        android:id="@+id/perfil"
+        layout="@layout/perfil">
+    </include>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Academico"
+        android:id="@+id/btn_academic"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:layout_marginBottom="@dimen/abc_text_size_button_material" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="profissional"
+        android:id="@+id/btn_professional"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="@dimen/abc_text_size_button_material"
+        />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Localização"
+        android:id="@+id/btn_map"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff" />
+    <!--<Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="teste contato"
+        android:id="@+id/btn_contact"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff" />-->
+</LinearLayout>

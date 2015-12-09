@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="8px">
+    <TextView
+        android:id="@+id/academic_tipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_font_h1"
+        android:text="Large Text a"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <TextView
+        android:id="@+id/academic_curso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/academic_tipo"
+        android:layout_below="@+id/academic_tipo"
+        android:textSize="@dimen/text_font_h1"
+        android:text="Large Text b"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <TextView
+        android:id="@+id/academic_instituicao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/academic_curso"
+        android:layout_below="@+id/academic_curso"
+        android:textSize="@dimen/text_font_h1"
+        android:text="Large Text c"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <!-- counter -->
+    <TextView
+        android:id="@+id/academic_data"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+</RelativeLayout>

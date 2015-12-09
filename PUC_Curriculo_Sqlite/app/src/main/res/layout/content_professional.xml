@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar"
+        android:textColor="#ffffff"
+        ></include>
+    <include
+        android:id="@+id/perfil"
+        layout="@layout/perfil">
+    </include>
+
+    <Button
+        android:id="@+id/btNovaEmpresa"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Nova Empresa" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Software Conhecidos"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_font_h1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+    <TextView
+        android:id="@+id/professional_habilidade"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="46dp"
+        android:textSize="@dimen/text_font_h1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Experiência no Mercado"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_font_h1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+    <ListView
+        android:id="@+android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+</LinearLayout>

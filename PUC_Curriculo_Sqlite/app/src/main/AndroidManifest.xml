@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wanderval.application" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".puc_curriculo_sqlite.ContactosActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".puc_curriculo_sqlite.NovoContacto"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.contactos.NovoContacto" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".puc_curriculo_sqlite.ContactosDetalhes"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.contactos.ContactosDetalhes" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activitys.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- ACADEMICO -->
+        <activity
+            android:name=".activitys.AcademicActivity"
+            android:label="@string/title_activity_academic"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".activitys.NovoAcademicActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.wanderval.application.activitys.NovoAcademicActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activitys.AcademicDetalhes"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.wanderval.application.activitys.AcademicDetalhes" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- EMPRESA -->
+
+        <activity
+            android:name=".activitys.EmpresaActivity"
+            android:label="@string/title_activity_professional"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".activitys.NovaEmpresaActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.wanderval.application.activitys.NovaEmpresaActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activitys.EmpresaDetalhes"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.wanderval.application.activitys.EmpresaDetalhes" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- PERFIL -->
+        <activity
+            android:name=".activitys.PerfilActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.wanderval.application.activitys.PerfilActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- PERFIL -->
+        <activity android:name=".activitys.MapActivity" >
+        </activity>
+    </application>
+
+</manifest>
